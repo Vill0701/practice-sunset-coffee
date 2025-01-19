@@ -131,7 +131,7 @@ body {
   font-size: 1.6rem;
   margin-top: 1rem;
   line-height: 1.5rem;
-  font-weight: 100;
+  font-weight: 200;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   mix-blend-mode: difference;
 }
@@ -145,6 +145,10 @@ body {
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta:hover {
+  background-color: #804a14;
 }
 
 /* About Section */
@@ -193,8 +197,12 @@ body {
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
-  font-weight: 200;
-  line-height: 1.6;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.about .row .content p span {
+  color: var(--primary);
 }
 
 /* Price Section */

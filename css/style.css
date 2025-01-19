@@ -323,14 +323,28 @@ footer .links {
 }
 
 footer .links a {
-  color: #fff;
-  padding: 0.7rem 1rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
 }
 
 footer .links a:hover {
   color: var(--bg);
 }
 
+footer .links a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--bg);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+footer .links a:hover::after {
+  transform: scaleX(0.5);
+}
 footer .credit {
   font-size: 0.8rem;
 }
